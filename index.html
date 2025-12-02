@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confesiones Anónimas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Confesiones Anónimas</h1>
+    <button id="toggleDark" class="toggle-btn">🌙</button>
+  </nav>
+
+  <header class="hero fade-in">
+    <h2>Expresa lo que sientes sin miedo</h2>
+    <p>Todo es anónimo. Nada de nombres reales. Solo historias.</p>
+  </header>
+
+  <main class="container fade-in">
+    <form id="confessionForm" class="card">
+      <h3>Enviar confesión</h3>
+      <textarea id="text" class="input" placeholder="Confesión..." rows="5"></textarea>
+      <input id="tag" class="input" placeholder="Etiqueta (opcional)" />
+      <button class="btn-primary" type="submit">Enviar</button>
+      <p id="formMsg" class="msg"></p>
+    </form>
+
+    <section class="card" id="published">
+      <h3>Confesiones Publicadas</h3>
+      <div id="posts" class="posts"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 Confesiones Anónimas — Proyecto ficticio
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
